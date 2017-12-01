@@ -20,9 +20,13 @@
 ### `playlists`
 * `GET /api/playlists` - returns relevant playlists (filtered by `data`/`params`)
 * `GET /api/playlists/:playlist_id` - returns playlist
-* `POST /api/playlists` - create playlist (with passed in `data`)
-* `DELETE /api/playlists/:playlist_id` - delete playlist
-* `PATCH /api/playlists/:playlist_id` - update playlist (with passed in `data`)
+* `POST /api/users/:user_id/playlists` - create playlist (with passed in `data`)
+* `DELETE /api/playlists/:id` - delete playlist
+* `PATCH /api/playlists/:id` - update playlist (with passed in `data`)
+
+### `playlist_songs`
+* `POST /api/playlists/:playlist_id/playlist_songs`
+* `DELETE /api/playlists/:playlist_id/playlist_songs/:id`
 
 ### `user_follows`
 * `POST /api/user_follows` - follows user

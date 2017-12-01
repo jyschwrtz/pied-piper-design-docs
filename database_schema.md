@@ -11,7 +11,7 @@ Database Schema:
 |image_url    |string     |           |
 * `has_many :playlists`
 <!-- * `has_many :albums` (playlists, if an artist) -->
-<!-- * `has_many :songs` (if an artist) -->
+* `has_many :songs` (if an artist)
 * `has_many :user_follows`
 * `has_many :followed_users` (through user_follows)
 * `has_many :user_followers`
@@ -27,9 +27,8 @@ Database Schema:
 |length       |integer    |do I need this?|
 |filename     |string     |           |
 |artist_id    |integer    |foreign key|
-|album_id  |integer    |foreign key, allow_nil: true - artist singles?|
 * `belongs_to :artist` (user)
-* `belongs_to :album` (playlist)
+<!-- * `belongs_to :album` (playlist) -->
 * `has_many :playlist_songs`
 * `has_many :playlists` (through playlist_songs)
 

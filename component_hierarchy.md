@@ -3,9 +3,11 @@
 ## Functional Component Hierarchy
 * Root
   * App
-    * Side Bar
-    * Main Page
-    * Controls Bar (footer)
+    * Greeting (Splash Page)
+    * Music Player
+      * Side Bar
+      * Main Page
+      * Controls Bar (footer)
 
 ## Side Bar
 * `SideBarContainer` + `SideBar`
@@ -31,6 +33,7 @@
 * `SessionFormContainer` + `SessionForm`
   * Route: `/#/login` + `/#/signup`
   * State: `errors.login`
+  * Components: `DemoLogin`
 
 **Note**: All other components are rendered inside the Main Page.
 ## Browse
